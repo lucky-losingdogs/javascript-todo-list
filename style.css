@@ -1,0 +1,168 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*container for the whole app/the background*/
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #154677, #4e085f);
+    padding: 10px;
+}
+
+.to-do-app
+{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.to-do-app h2
+{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.to-do-app img
+{
+    width: 30px;
+    margin-left: 10px;
+}
+
+/*the row with the input field*/
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+/*input field for the typing bar*/
+input
+{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button
+{
+    border: none;
+    outline: none;
+    padding: 16px 50px; /*determines the size*/
+    background: #ff5945;
+    color: #fff; /*button text colour*/
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li
+{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::before
+{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked
+{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before
+{
+    background-image: url(images/checked.png);
+}
+
+ul li span
+{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/*when hovering over the span*/
+ul li span:hover
+{
+    background: #edeef0;
+}
+
+.search-container
+{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+}
+
+.search-container img
+{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.search-container:hover #search-input-box {
+    display: block;
+}
+
+#search-input-box
+{
+    display: none;
+    width: 180px;
+    height: 40px;
+}
+
+.hidden {
+    display: none;
+}

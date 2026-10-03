@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="to-do-app">
+        <h2>To-Do List <img src="images/icon.png" alt=""> </h2>
+        
+        <div class="search-container">
+            <img src="images/search.svg" alt="">
+            <label for="search-input-box"></label><input type="text" id="search-input-box" placeholder="Searching...">
+        </div>
+        
+        <div class="row">
+            <label for="input-box"></label><input type="text" id="input-box" placeholder="Start typing...">
+            <button onclick="AddTask()">Add</button>
+        </div>
+        
+        <!--unordered list-->
+        <ul id="list-container">
+        </ul>
+        
+    </div>
+    
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
