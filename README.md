@@ -9,7 +9,7 @@
 
 A to do list with functionality to strike out tasks and search for tasks.
 
-
+[![Check it out here](https://img.shields.io/badge/check_it_out_here-%23F2545B?style=for-the-badge&logo=pipecat&logoColor=%23fff&logoSize=auto)](https://lucky-losingdogs.github.io/javascript-todo-list)
 
 ## Video
 
